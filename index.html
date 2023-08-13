@@ -4,21 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #download{
+                 height:20px;
+                 width: 70px;
+                 text-decoration: none;
+                 margin-left: 50%;
+                 transform: translateX(-50%);
+                 color: aliceblue;
+                 font-size: 25px;
+                 background:rgb(11, 99, 20);
+                 border: solid 1px rgba(0, 0, 0, 0.432);
+                 border-radius: 8px;
+                 padding: 10px;
+                 transition: all ease 0.7s;
+      }
+      #download:hover{
+        box-shadow: 10px 10px 1px 0px rgba(0, 0, 0, 0.661);
+      }
+
+    </style>
 </head>
 <body>
+    <div style=" width:100%; height:90vh" >
+        <iframe src="./data/gps_document.pdf" frameborder="0" width="100%" height="90%"></iframe>
+
+    </div>
+    <a  id="download" href="./data/gps_document.pdf" download >download</a>
+    <!-- <a href="" onclick="whatsapp()"  id="share"><i class="fa-solid fa-share-nodes"></i></a> -->
    
-    <a  id="download" href="./data/gps_document.pdf" download onclick="fun()" >download</a>
-   
-    <script>
+    <!-- <script>
         
         window.onload = ()=>{
             
             let link=document.getElementById("download");
 
             link.click();
+            
        }
     
-     </script>
+     </script> -->
 </body>
 </html>
